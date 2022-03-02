@@ -2,3 +2,14 @@
 /* #4a4a4a (Texto del menú)
 #3CDBC0 (Color de fondo de la página)
 #FFFFFF (Color de texto de "Creando diversidad digital") */
+
+/* elemento {
+    background-color: var(--main-bg-color);
+  } */
+
+:root {
+  --font-family: "Rubik", sans-serif;
+  --background-color: #3cdbc0;
+  --color-principaltext: #ffffff;
+  --color-menu: #4a4a4a;
+}
