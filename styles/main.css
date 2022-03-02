@@ -56,8 +56,19 @@ a.item-nav {
   font-size: 30px;
   font-weight: bold;
 }
-/* @media all and (min-width: 480px) {
-    .hero {
-      background-image: url("../images/premium_dancer.png");
-    }
-  } */
+@media all and (min-width: 768px) {
+  .header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+  }
+  .logo {
+    margin: 20px 0;
+  }
+  .item-main {
+    font-size: 40px;
+  }
+}
