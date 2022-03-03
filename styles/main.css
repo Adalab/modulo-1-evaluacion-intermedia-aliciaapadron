@@ -7,10 +7,15 @@
   margin: 0;
   padding: 0;
 }
+ul {
+  list-style: none;
+}
+
 :root {
-  --font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
   --background-color: #3cdbc0;
-  --color-principaltext: #ffffff;
+  --main-text-color: #ffffff;
   --color-menu: #4a4a4a;
 }
 
@@ -30,35 +35,34 @@
   font-size: 16px;
   display: flex;
 }
-
-.item-nav {
+.menu__list {
   display: flex;
-  justify-content: space-between;
-  padding: 0 10px 10px 13px;
 }
-a.item-nav {
+
+.menu__link {
+  padding: 10px;
   color: var(--color-menu);
-  font-family: var(--font-family);
   text-decoration: none;
-  box-shadow: none;
+  text-transform: uppercase;
 }
+
 .main {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--background-color);
+  color: var(--main-text-color);
+  text-transform: capitalize;
 }
-.item-main {
-  color: var(--color-principaltext);
-  font-family: var(--font-family);
+.title {
+  width: 11ch;
+  text-align: center;
   font-size: 30px;
-  font-weight: bold;
 }
+
 @media all and (min-width: 768px) {
   .header {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 30px;
@@ -66,7 +70,7 @@ a.item-nav {
   .logo {
     margin: 20px 0;
   }
-  .item-main {
+  .title {
     font-size: 40px;
   }
 }
